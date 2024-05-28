@@ -1,0 +1,41 @@
+collection users
+{
+    "id" : "idUser"
+    "email" : "email",
+    "pseudo" : "pseudo",
+    "password" : "password"
+}
+
+collection books
+{
+    "user" : "idUser",
+    "id" : "idlivre",
+    "titre du livre" : titre du livre"
+    "auteur" :{
+        "nom auteur" : "nom auteur",
+        "prenom auteur" : "prenom auteur",
+        },
+    "edition" :{
+        "nom edition" : "nom edition",
+        "date edition" : "date edition",
+        "nombre de pages" : "nombre de pages"
+        },
+    "numero sbe" : "numero sbe",
+    "genre" : [
+        "genre 1",
+        "genre 2",
+        "genre 3"
+        ],
+    "format" : [
+        "format 1",
+        "format 2",
+        "format 3
+        ],
+    "partager" : bool,
+    "couverture" : "lien vers jpg",
+    "pitch" : "pitch"
+},{
+    "likers" : []
+},{
+    "date" : "date"
+}

@@ -1,0 +1,18 @@
+body div {
+  background-color: rgb(246, 238, 208);
+}
+
+.testsass {
+  font-family: "Kaushan Script", monospace;
+  font-weight: bold;
+}
+
+.text-footer {
+  font-family: "Island Moments", monospace;
+  color: rgb(20, 67, 177);
+}
+
+.header-style {
+  font-family: "Island Moments", monospace;
+  color: rgb(20, 67, 177);
+}/*# sourceMappingURL=style.css.map */
