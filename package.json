@@ -1,16 +1,14 @@
 {
-  "name": "bilio-fun",
+  "name": "biblio-fun",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.3.3",
     "dotenv": "^16.4.5",
     "nodemon": "^3.1.0",
     "react": "^18.3.1",
-    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "sass": "^1.77.2",
@@ -41,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.24.1"
+    "@babel/preset-react": "^7.24.1",
+    "tailwindcss": "^3.4.3"
   }
 }

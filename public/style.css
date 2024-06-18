@@ -4,7 +4,12 @@ body div {
 
 .testsass {
   font-family: "Kaushan Script", monospace;
-  font-weight: bold;
+  color: rgb(20, 67, 177);
+}
+
+.picSize {
+  width: 800px;
+  heigth: 200px;
 }
 
 .text-footer {
@@ -15,4 +20,44 @@ body div {
 .header-style {
   font-family: "Island Moments", monospace;
   color: rgb(20, 67, 177);
+  font-size: 4rem;
+}
+
+.box-size {
+  min-height: 400px;
+  max-width: 400px;
+}
+
+.title-style {
+  font-family: "MedievalSharp", monospace;
+  color: rgb(20, 67, 177);
+}
+
+.bookPicsSize {
+  width: auto;
+  height: auto;
+}
+
+.text-size {
+  margin-top: -532px;
+  width: 600px;
+  height: 450px;
+  font-family: "Island Moments", monospace;
+}
+
+@media screen and (max-width: 767px) {
+  .text-size {
+    margin-top: -585px;
+    width: 550px;
+    height: auto;
+    font-family: "Island Moments", monospace;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-size {
+    margin-top: -585px;
+    width: 400px;
+    height: auto;
+    font-family: "Island Moments", monospace;
+  }
 }/*# sourceMappingURL=style.css.map */

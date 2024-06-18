@@ -3,11 +3,15 @@ import React from 'react'
 export default function Footer() {
   return (
     <>
-      <div className="d-flex align-items-center justify-content-center">
+      <footer className="'fixed 
+      bottom-0 md:bottom-0 lg:bottom-0 
+      flex justify-around mt-auto
+      left:0
+      '">
         <div>
-          <p className="fs-3 text-footer">Powered by: X-CYL</p>
+          <p className="text-footer text-2xl">Powered by: X-CYL</p>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

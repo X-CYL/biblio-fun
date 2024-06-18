@@ -3,10 +3,14 @@ import React from "react";
 export default function Acceuil() {
   return (
     <>
-      <div className="d-flex align-items-center justify-content-center vh-100">
-        <div className="text-decoration-underline">
-          <p className="fs-1 text-info testsass">Page acceuil de biblio-fun</p>
-          <p className="fs-4 text-center text-warning">Cette page est en construction</p>
+      <div className="">
+        <div className="grid h-screen place-items-center">
+          <div className="text-center">
+            <p className="testsass text-4xl font-bold">
+              Page acceuil de biblio-fun
+            </p>
+            <p className="">Cette page est en construction</p>
+          </div>
         </div>
       </div>
     </>
