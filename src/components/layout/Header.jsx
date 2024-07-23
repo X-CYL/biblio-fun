@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <>
       <header>
-        <p className="fixed-top text-3xl font-bold underline text-red-500 decoration-green-600 bg-slate-400">
+        <p className="text-center bg-teal-300 text-4xl text-purple-800">
           ici sera le header
         </p>
       </header>
