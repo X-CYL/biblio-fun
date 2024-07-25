@@ -4,7 +4,7 @@ ca demarre en localhost sur le port 3000
 
 
 
-Les variables à créer
+Les variables à créer FAIT
 couleur principale de fond de page
 couleur principale fond modales
 couleur fond de carte livres

@@ -1,23 +1,17 @@
-import Footer from "../src/components/layout/Footer";
+import{BrowserRouter, Routes, Route} from 'react-router-dom'
 import Acceuil from "../src/components/pages/Acceuil";
-import Header from "../src/components/layout/Header";
-import QuiSuisJe from "../src/components/pages/QuiSuisJe";
-import BackgroundImageComponent from "./components/layout/BackgroundImageComponent";
-import backgroundImage from "./assets/pics/fairytale-storytelling-with-open-book-concept.jpeg";
-import BiblioFunTitle from "./components/micro/BiblioFunTitle";
+import QuiSuisJe from "./components/pages/QuiSuisJe";
+import NotFound404 from './components/pages/NotFound404';
 
 function App() {
   return (
-    <>
-      <div>
-        <Header />
-        <BiblioFunTitle />
-        <BackgroundImageComponent>
-          
-        </BackgroundImageComponent>
-        <Footer />
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Acceuil />} />
+        <Route path="/qui suis je" element={<QuiSuisJe />} />
+        <Route path="*" element={<NotFound404 />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

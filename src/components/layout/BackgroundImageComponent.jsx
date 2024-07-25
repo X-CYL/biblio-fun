@@ -5,7 +5,7 @@ export default function BackgroundImageComponent({ children }) {
   return (
     <>
       <div
-        className="bg-cover bg-no-repeat bg-center h-screen mt-12"
+        className="bg-cover bg-no-repeat bg-center h-screen md:max-w-[80%] md:mx-auto mt-14"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         {children}

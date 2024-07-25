@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "primary-font": ["'Island-moments'", "sans-serif"],
+        "primary-font": ["'Island Moments'", "sans-serif"],
         "title-font": ["MedievalSharp", "sans-serif"],
         "card-font": ["'Kaushan Script'", "sans-serif"],
       },
@@ -22,5 +22,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
