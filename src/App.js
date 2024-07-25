@@ -1,6 +1,7 @@
 import{BrowserRouter, Routes, Route} from 'react-router-dom'
 import Acceuil from "../src/components/pages/Acceuil";
 import QuiSuisJe from "./components/pages/QuiSuisJe";
+import Connexion from './components/pages/Connexion';
 import NotFound404 from './components/pages/NotFound404';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Acceuil />} />
         <Route path="/qui suis je" element={<QuiSuisJe />} />
+        <Route path="/connexion" element={<Connexion />} />
         <Route path="*" element={<NotFound404 />} />
       </Routes>
     </BrowserRouter>
