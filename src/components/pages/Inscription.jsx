@@ -3,15 +3,15 @@ import BackgroundImageComponent from "components/layout/BackgroundImageComponent
 import BiblioFunTitle from "components/micro/BiblioFunTitle";
 import Header from "components/layout/Header";
 import Footer from "components/layout/Footer";
-import ConnectedCard from "components/modals/ConnectedCard";
+import SubscribeCard from "components/modals/SubscribeCard";
 
-export default function Connexion() {
+export default function Inscription() {
   return (
     <>
       <Header />
       <BiblioFunTitle />
       <BackgroundImageComponent>
-        <ConnectedCard />
+        <SubscribeCard />
       </BackgroundImageComponent>
       <Footer />
     </>
