@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "components/micro/Button";
+import InputCustom from "components/micro/Inputcustom";
 
 export default function ConnectedCard() {
   return (
@@ -11,7 +12,7 @@ export default function ConnectedCard() {
           </h2>
           <body>
             <div className="grid grid-rows-4 md:justify-center">
-              <div className="">
+              { /*<div className="">
                 <label
                   className="text-4xl ml-7 md:ml-2 font-primary-font text-bg-primary"
                   htmlFor="email"
@@ -24,9 +25,11 @@ export default function ConnectedCard() {
                   type="email"
                   name="email"
                 />
-              </div>
+              </div> */}
+              <InputCustom type="email"
+              labelName ="votre email ici" />
             <div className="mt-10">
-            <label
+            {/*<label
                 className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
                 htmlFor="password"
               >
@@ -37,11 +40,14 @@ export default function ConnectedCard() {
                 className="w-[80%] md:w-[100%] ml-7 md:ml-2 md:h-10 border-4 border-border-input-color rounded-md bg-bg-primary"
                 type="text"
                 name="password"
-              />
+              /> */}
+              <InputCustom type="password"
+              labelName ="mot de passe ici" />
+            <div className="mt-10"></div>
             </div>
               
             </div>
-            <div className="container mx-auto flex flex-row justify-around mt-[-70px] md:mt-[-110px]">
+            <div className="container mx-auto flex flex-row justify-around mt-[-220px] md:mt-[-370px]">
               <div>
                 <Button name="Annuler" variant="green" />
               </div>

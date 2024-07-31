@@ -67,7 +67,7 @@ export default function SubscribeCard() {
                 name="password"
               />
             </div>
-              
+        
             </div>
             <div className="container mx-auto flex flex-row justify-around mt-16 md:mt-6">
               <div>
