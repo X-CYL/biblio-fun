@@ -20,11 +20,9 @@ module.exports = {
         "bg-save-btn": "rgb(237,207,98)",
         "bg-del-btn": "rgb(204,105,108)",
       },
-      inputSize :{
-        "smallInput" : "",
-        "bigInput" : ""
-      }
     },
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [require("tailwind-scrollbar"),
+            require("@tailwindcss/forms")
+  ]
 };

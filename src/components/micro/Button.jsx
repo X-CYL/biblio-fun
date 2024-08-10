@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-export default function Button({ name, variant }) {
+export default function Button({ name, variant, onClick }) {
   return (
     <div
       className={classNames([
@@ -12,6 +12,7 @@ export default function Button({ name, variant }) {
           "bg-bg-save-btn": variant === "orange",
         },
       ])}
+      onClick={onClick}
     >
       {name}
     </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from 'components/micro/Button'
+import InputCustom from 'components/micro/Inputcustom'
 
 export default function SubscribeCard() {
   return (
@@ -12,64 +13,20 @@ export default function SubscribeCard() {
           <body>
             <div className="grid grid-rows-4 md:justify-center">
             <div className='mt-1'>
-                <label
-                  className="text-4xl ml-7 md:ml-2 font-primary-font text-bg-primary"
-                  htmlFor="email"
-                >
-                  {" "}
-                  Votre pseudo
-                </label>
-                <input
-                  className="w-[80%] md:w-[100%] ml-7 md:ml-2 md:h-10 border-4 border-border-input-color rounded-md bg-bg-primary"
-                  type="text"
-                  name="pseudo"
-                />
+                <InputCustom type="text" labelName="votre pseudo"/>
               </div>
               <div className=''>
-                <label
-                  className="text-4xl ml-7 md:ml-2 font-primary-font text-bg-primary"
-                  htmlFor="email"
-                >
-                  {" "}
-                  Votre e-mail
-                </label>
-                <input
-                  className="w-[80%] md:w-[100%] ml-7 md:ml-2 md:h-10 border-4 border-border-input-color rounded-md bg-bg-primary"
-                  type="email"
-                  name="email"
-                />
+                <InputCustom type="email" labelName="Votre e-mail" />
               </div>
             <div className="">
-            <label
-                className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
-                htmlFor="password"
-              >
-                {" "}
-                Mot de passe
-              </label>
-              <input
-                className="w-[80%] md:w-[100%] ml-7 md:ml-2 md:h-10 border-4 border-border-input-color rounded-md bg-bg-primary"
-                type="text"
-                name="password"
-              />
+               <InputCustom type="password" labelName="Mot de passe" />
             </div>
             <div className="">
-            <label
-                className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
-                htmlFor="password"
-              >
-                {" "}
-                Confirm mot de passe
-              </label>
-              <input
-                className="w-[80%] md:w-[100%] ml-7 md:ml-2 md:h-10 border-4 border-border-input-color rounded-md bg-bg-primary"
-                type="text"
-                name="password"
-              />
+                <InputCustom type="password" labelName="Repeter mot de passe" />
             </div>
         
             </div>
-            <div className="container mx-auto flex flex-row justify-around mt-16 md:mt-6">
+            <div className="container mx-auto flex flex-row justify-around mt-8 md:mt-6">
               <div>
                 <Button name="Annuler" variant="green" />
               </div>

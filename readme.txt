@@ -16,5 +16,9 @@ couleur de fond de bouton annuler
 couleur de fond de bouton modifier
 couleur de fond de bouton supprimer
 
+remercier
+Say thanks to Placidplace
+By downloading, you agree to our License
 
+pour le gif animé de la page 404
 

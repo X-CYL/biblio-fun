@@ -1,0 +1,142 @@
+collection users
+{
+    "id" : {
+        type : string,
+        required : true
+    },
+    "email" : {
+        type : string,
+        required : true
+    },
+    "pseudo" : {
+        type : string,
+        required : true
+    },
+    "password" : {
+        type : string, 
+        required : true
+    }
+}
+
+collection authors
+{
+    "id" : {
+        type : string,
+        required : true
+    },
+    "email" : {
+        type : string,
+        required : false
+    },
+    "biography": {
+        type : string,
+        required : true
+    },
+    "url site perso": {
+        type : string,
+        required : false
+    }
+}
+
+collection genres 
+{
+    "id" : {
+        type : string,
+        required : true
+    },
+    "genre" : {
+        type : string,
+        required : true
+    }
+}
+
+collection format
+{
+    "id" : {
+        type : string,
+        required : true
+    },
+    "format" : {
+        type : string,
+        required : true
+    }
+}
+
+collection books
+{
+    "id" : {
+        type : string,
+        required : true
+    },
+    "titre du livre" : {
+        type : string,
+        required : true
+    }
+    "auteur" :{
+        "id": {
+            type : string,
+            required : true
+        },
+        "nom auteur" : {
+            type : string,
+            required : true
+        },
+        "prenom auteur" : {
+            type : string,
+            required : true
+        }
+    },
+    "edition" :{
+        "nom edition" : {
+            type : string,
+            required : true
+        },
+        "date edition" : {
+            type : date,
+            required : true
+        },
+        "nombre de pages" : {
+            type : int,
+            required : true
+        }
+    },
+    "numero sbe" : {
+        type : string,
+        required : false
+    },
+    "creatorId" : {
+        type : string,
+        required : true
+    },
+    "genreId" : {
+        type : string,
+        required : true
+    },
+    
+    "formatId" : {
+        type: string,
+        required : true
+    },
+    "partager" : {
+        type : bool,
+        required : false
+    }
+    "couverture" : {
+        type : string,
+        required : true
+    },
+    "pitch" : {
+        type : string,
+        required : false,
+        max : 200
+    }
+},
+{
+    "likers" : []
+},
+{
+    "date" : {
+        type : date,
+        required : true
+    }
+}

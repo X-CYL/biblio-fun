@@ -6,12 +6,32 @@ collection users
     "password" : "password"
 }
 
+collection authors
+{
+    "id" : "idAuthor",
+    "email" : "email",
+    "biography": "la biographie",
+    "url site perso": "htpps://nomdelauteur.com"
+}
+
+collection genres 
+{
+    "id" : "idGenres",
+    "genre" : "genre"
+}
+
+collection format
+{
+    "id" : "idFormat",
+    "format" : "format"
+}
+
 collection books
 {
-    "user" : "idUser",
     "id" : "idlivre",
     "titre du livre" : titre du livre"
     "auteur" :{
+        "id": "idAuthor",
         "nom auteur" : "nom auteur",
         "prenom auteur" : "prenom auteur",
         },
@@ -21,21 +41,17 @@ collection books
         "nombre de pages" : "nombre de pages"
         },
     "numero sbe" : "numero sbe",
-    "genre" : [
-        "genre 1",
-        "genre 2",
-        "genre 3"
-        ],
-    "format" : [
-        "format 1",
-        "format 2",
-        "format 3
-        ],
+    "creatorId" : "idUser",
+    "genreId" : "idGenre",
+    
+    "formatId" : "idFormat",
     "partager" : bool,
     "couverture" : "lien vers jpg",
     "pitch" : "pitch"
-},{
+},
+{
     "likers" : []
-},{
+},
+{
     "date" : "date"
 }
