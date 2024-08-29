@@ -86,8 +86,8 @@ export default function RecordBook() {
                       variant="medium"
                     />
                   </div>
-                  <div>
-                    <InputCustom type="text" labelName="Nombre de pages" />
+                  <div className="mt-[-10px] md:mt-[-10px]">
+                    <InputCustom type="number" labelName="Nombre de pages" />
                   </div>
                   <div>
                     <InputCustom

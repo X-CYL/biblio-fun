@@ -5,6 +5,7 @@ import Connexion from 'components/pages/Connexion';
 import Inscription from 'components/pages/Inscription';
 import RecordBook from 'components/pages/Enregistrement'
 import NotFound404 from 'components/pages/NotFound404';
+import AfficheLivres from 'components/pages/AfficheLivres';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/connexion" element={<Connexion />} />
         <Route path="/inscription" element={<Inscription />} />
         <Route path="/enregistrement" element={<RecordBook />} />
+        <Route path="/affiche livres" element={<AfficheLivres />} />
         <Route path="*" element={<NotFound404 />} />
       </Routes>
     </BrowserRouter>
