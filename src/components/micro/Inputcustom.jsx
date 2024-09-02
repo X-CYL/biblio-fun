@@ -1,7 +1,7 @@
 import React from "react";
 import classNames from "classnames";
 
-export default function InputCustom({ labelName, type, variant, focus }) {
+export default function InputCustom({ labelName, type, variant, placeholder }) {
   let inputZone = null;
 
   switch (type) {
@@ -26,6 +26,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
             type="date"
             name="date"
             id="date"
+            placeholder ={placeholder}
           ></input>
         </>
       );
@@ -55,6 +56,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
               type="text"
               name="text"
               id="text"
+              
             ></input>
           </div>
         </>
@@ -79,8 +81,9 @@ export default function InputCustom({ labelName, type, variant, focus }) {
               },
             ])}
             type="email"
-            name="email id="
-            email
+            name="email"
+             id="email"
+             placeholder ={placeholder}
           ></input>
         </>
       );
@@ -106,6 +109,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
             type="password"
             name="password"
             id="password"
+            placeholder ={placeholder}
           ></input>
         </>
       );
@@ -151,6 +155,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
             type="textarea"
             name="textarea"
             id="textarea"
+            placeholder ={placeholder}
           ></input>
         </>
       );
@@ -177,6 +182,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
               type="file"
               name="file"
               id="file"
+              placeholder ={placeholder}
             ></input>
           </div>
         </>
@@ -204,6 +210,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
               type="number"
               name="number"
               id="number"
+              placeholder ={placeholder}
             ></input>
           </div>
         </>

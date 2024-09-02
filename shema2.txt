@@ -1,4 +1,4 @@
-collection users
+collection creator
 {
     "id" : {
         type : string,
@@ -122,7 +122,7 @@ collection books
         required : false
     }
     "couverture" : {
-        type : string,
+        type : blob,
         required : true
     },
     "pitch" : {

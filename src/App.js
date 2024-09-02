@@ -6,6 +6,8 @@ import Inscription from 'components/pages/Inscription';
 import RecordBook from 'components/pages/Enregistrement'
 import NotFound404 from 'components/pages/NotFound404';
 import AfficheLivres from 'components/pages/AfficheLivres';
+import Contact from 'components/pages/Contact';
+import Admin from 'components/pages/Admin'
 
 
 function App() {
@@ -18,7 +20,10 @@ function App() {
         <Route path="/inscription" element={<Inscription />} />
         <Route path="/enregistrement" element={<RecordBook />} />
         <Route path="/affiche livres" element={<AfficheLivres />} />
+        <Route path="/contact" element ={<Contact />} />
+        <Route path="/administration" element={<Admin />} />
         <Route path="*" element={<NotFound404 />} />
+        
       </Routes>
     </BrowserRouter>
   );
