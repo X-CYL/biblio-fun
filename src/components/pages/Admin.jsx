@@ -5,8 +5,8 @@ import Button from "components/micro/Button";
 export default function Admin() {
   return (
     <>
-      <h1 className="text-center text-4xl underline">Administration</h1>
-      <div>
+      <h1 className="text-center text-4xl underline bg-stone-400">Administration</h1>
+      <div className="bg-stone-400 text-center">
         <InputCustom
           type="text"
           labelName="genre"
@@ -14,7 +14,7 @@ export default function Admin() {
           placeholder="genre du livre"
         />
       </div>
-      <div>
+      <div className="bg-stone-400 text-center">
         <InputCustom
           type="text"
           labelName="Format"
