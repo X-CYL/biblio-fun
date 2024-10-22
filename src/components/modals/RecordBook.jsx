@@ -6,10 +6,24 @@ import { format } from "components/arrays/Array";
 
 import { useState } from "react";
 
-export default function RecordBook() {
-  const [genreSelect, setGenreSelect] = useState("");
-  const [formatSelect, setFormatSelect] = useState("");
-  const [isChecked, setIsChecked] = useState(false);
+/**
+ * Soit tu recois pas de book (book = null) => creation d'un nouveau book
+ * Si tu recois un book (book !== null) => update un book
+ */
+
+export default function RecordBook({ book }) {
+  const isBookUpdate = book !== null; // en train de modifier un book
+  isBookUpdate && console.log("book title : ", book.title);
+
+  const [genreSelect, setGenreSelect] = useState(
+    isBookUpdate ? book.genre : ""
+  );
+  const [formatSelect, setFormatSelect] = useState(
+    isBookUpdate ? book.format : ""
+  );
+  const [isChecked, setIsChecked] = useState(
+    isBookUpdate ? book.isVisible : false
+  );
 
   const genreChange = (e) => {
     setGenreSelect(e.target.value);
@@ -21,8 +35,20 @@ export default function RecordBook() {
     setIsChecked(c.target.checked);
   };
   const handleSubmit = (event) => {
+    if (isBookUpdate) {
+      // fetch("bdd", {
+      //   body: {
+      //     title: "input title",
+      //   },
+      // });
+      // PUT ou PATCH avec les infos
+      alert(`CECI EST UN UPDATE`);
+    } else {
+      // POST avec les infos
+      alert(`CECI EST UN CREATE`);
+    }
     event.preventDefault();
-    alert(`La case est ${isChecked ? "cochée" : "décochée"}`); //en attendant la logique definitive
+    // alert(`La case est ${isChecked ? "cochée" : "décochée"}`); //en attendant la logique definitive
   };
 
   const handleReset = (event) => {
@@ -53,6 +79,7 @@ export default function RecordBook() {
                       labelName="Titre du livre"
                       variant="medium"
                       id="titre"
+                      defaultValue={isBookUpdate ? book.title : ""}
                     />
                   </div>
                   <div>
@@ -169,15 +196,13 @@ export default function RecordBook() {
               </div>
               <div className="container mx-auto flex flex-wrap gap-4 justify-around mt-36 md:mt-6">
                 <div>
-                  
-                    <Button
-                      name="Annuler"
-                      variant="green"
-                      type="reset"
-                      onClick={handleReset}
-                      link="/"
-                    />
-                  
+                  <Button
+                    name="Annuler"
+                    variant="green"
+                    type="reset"
+                    onClick={handleReset}
+                    link="/"
+                  />
                 </div>
 
                 <div>

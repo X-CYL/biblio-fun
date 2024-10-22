@@ -1,14 +1,14 @@
 import React from "react";
 import BackgroundImageComponent from "../layout/BackgroundImageComponent";
 import BiblioFunTitle from "../micro/BiblioFunTitle";
-import Header from "../layout/Header";
+import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 
 
 export default function Acceuil() {
   return (
     <>
-      <Header />
+      <Navbar />
       <BiblioFunTitle />
       <BackgroundImageComponent>
       

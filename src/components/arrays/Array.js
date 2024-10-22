@@ -39,4 +39,64 @@
 
  ];
 
+export const navItems =[
+  {
+    id : 1,
+    title : "Acceuil",
+    path : "/"
+  },
+  {
+    id : 2,
+    title :"Qui suis-je",
+    path : "/qui suis je",
+  },
+    {
+      id : 3,
+      title : "gerer mes livres",
+      path : "/gerer mes livres"
+    },
+    {
+      id : 4,
+      title : "se connecter",
+      path : "/connexion"
+    },
+    {
+      id : 5,
+      title : "S'inscrire",
+      path : "/inscription"
+    },
+    {
+      id : 6,
+      title : "Mon compte",
+      path : "/compte"
+    },
+    {
+      id : 7,
+      title : "Contact",
+      path : "/contact"
+    }
   
+]
+
+export const dropItems = [
+  {
+    id : 1,
+    title : "Enregistrer un livre",
+    path : "/enregistrement"
+  },
+  {
+    id : 2,
+    title : "Modifier un livres",
+    path : ""
+  },
+  {
+    id : 3,
+    title : "Lister les livres",
+    path : ""
+  },
+  {
+    id : 4,
+    title : "Lister tous les auteurs",
+    path : ""
+  }
+]

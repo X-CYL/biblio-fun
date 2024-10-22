@@ -1,9 +1,18 @@
 import React from "react";
 import classNames from "classnames";
 
-export default function InputCustom({ id, labelName, type, variant, placeholder, option, onChange, value }) {
+export default function InputCustom({
+  id,
+  labelName,
+  type,
+  variant,
+  placeholder,
+  option,
+  onChange,
+  value,
+  defaultValue,
+}) {
   let inputZone = null;
-  
 
   switch (type) {
     case "date":
@@ -27,12 +36,12 @@ export default function InputCustom({ id, labelName, type, variant, placeholder,
             type="date"
             name="date"
             id={id}
-            placeholder ={placeholder}
+            placeholder={placeholder}
           ></input>
         </>
       );
       break;
-      case "option":
+    case "option":
       inputZone = (
         <>
           <label
@@ -54,9 +63,10 @@ export default function InputCustom({ id, labelName, type, variant, placeholder,
             name="text"
             id={id}
             value={value}
-            placeholder ={placeholder}
+            placeholder={placeholder}
             onChange={onChange}
-          >{option}
+          >
+            {option}
           </select>
         </>
       );
@@ -69,7 +79,7 @@ export default function InputCustom({ id, labelName, type, variant, placeholder,
               className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
               htmlFor={id}
             >
-              {labelName} 
+              {labelName}
             </label>
           </div>
           <div>
@@ -86,6 +96,7 @@ export default function InputCustom({ id, labelName, type, variant, placeholder,
               name="text"
               id={id}
               placeholder={placeholder}
+              defaultValue={defaultValue}
             ></input>
           </div>
         </>
@@ -111,8 +122,8 @@ export default function InputCustom({ id, labelName, type, variant, placeholder,
             ])}
             type="email"
             name="email"
-             id={id}
-             placeholder ={placeholder}
+            id={id}
+            placeholder={placeholder}
           ></input>
         </>
       );
@@ -138,7 +149,7 @@ export default function InputCustom({ id, labelName, type, variant, placeholder,
             type="password"
             name="password"
             id={id}
-            placeholder ={placeholder}
+            placeholder={placeholder}
           ></input>
         </>
       );
@@ -185,7 +196,7 @@ export default function InputCustom({ id, labelName, type, variant, placeholder,
             type="textarea"
             name="textarea"
             id={id}
-            placeholder ={placeholder}
+            placeholder={placeholder}
           ></input>
         </>
       );
@@ -212,7 +223,7 @@ export default function InputCustom({ id, labelName, type, variant, placeholder,
               type="file"
               name="file"
               id={id}
-              placeholder ={placeholder}
+              placeholder={placeholder}
             ></input>
           </div>
         </>
@@ -240,7 +251,7 @@ export default function InputCustom({ id, labelName, type, variant, placeholder,
               type="number"
               name="number"
               id={id}
-              placeholder ={placeholder}
+              placeholder={placeholder}
             ></input>
           </div>
         </>
