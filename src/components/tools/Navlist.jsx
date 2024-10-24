@@ -1,38 +1,48 @@
-export const listNav = [
+export const listNavLeft = [
     {
         id : 1,
         title : "acceuil",
         path : "/",
+        classN : "text-nav-text-color font-primary-font text-5xl hover:text-nav-text-color-selected"
     },
     {
         id: 2,
         title : "Qui suis je",
-        path : "../qui suis je"
+        path : "../qui suis je",
+        classN : "text-nav-text-color font-primary-font text-5xl hover:text-nav-text-color-selected"
     },
     {
         id : 3,
         title : "Gerer mes livres",
-        path : "./"
+        path : "./",
+        classN : "text-nav-text-color font-primary-font text-5xl hover:text-nav-text-color-selected"
+    }
+]
+
+export const listNavRight = [
+    {
+        id : 1,
+        title : "Se connecter",
+        path  : "../connexion",
+        classN : "text-nav-text-color font-primary-font text-5xl hover:text-nav-text-color-selected"
+    },
+    {
+        id : 2,
+        title : "S'inscrire",
+        path : "../inscription",
+        classN : "text-nav-text-color font-primary-font text-5xl hover:text-nav-text-color-selected"
+    },
+    {
+        id : 3,
+        title : "Contact",
+        path : "../contact",
+        classN : "text-nav-text-color font-primary-font text-5xl hover:text-nav-text-color-selected"
     },
     {
         id : 4,
-        title : "Se connecter",
-        path  : "../connexion"
-    },
-    {
-        id : 5,
-        title : "S'inscrire",
-        path : "../inscription"
-    },
-    {
-        id : 6,
-        title : "Contact",
-        path : "../contact"
-    },
-    {
-        id : 7,
         title : "Compte",
-        path : ""
+        path : "",
+        classN : "text-nav-text-color font-primary-font text-5xl hover:text-nav-text-color-selected"
     }
 ]
 

@@ -16,14 +16,14 @@ Les classes personalisées (fichier de config tailwind) à créer FAIT
     =>couleur de fond de bouton modifier FAIT
     =>couleur de fond de bouton supprimer FAIT
 les composants micro
-    =>Creer les boutons
+    =>Creer les boutons FAIT
     =>Creer les inputs avec labels
 Les composants base
 Les composants layout
-    =>Le footer
+    =>Le footer FAIT
     =>Le header
-    =>Le background image
-    =>Le background color
+    =>Le background image FAIT
+    =>Le background color FAIT
 Les composants modales
 Les routes
 
@@ -34,8 +34,8 @@ Les composants pages
     =>Faire la page d'enregistrement FAIT
     =>Faire la page 404 FAIT
     =>Faire le header FAIT
-    =>Faire une page admin 
-    =>Faire une page ou modale de contact
+    =>Faire une page admin FAIT
+    =>Faire une page ou modale de contact FAIT
     =>Faire uen page admin pour pouvoir gerer le CRUD sur
         -le format des livres
         -le genre des livres.
@@ -44,7 +44,7 @@ Les composants pages
 
                                                         API
 Definir les ends points
-
+voir l'appli API dediée "biblio-fun-api"
 
 
                                                     fix à faire

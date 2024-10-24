@@ -26,4 +26,7 @@ requête 2
 requête 3
 -
 
+lancer le script ci dessous pour rebuild tailwind a chanque changement
+
+npx tailwindcss -i ./src/input.css -o ./public/style.css --watch
 
