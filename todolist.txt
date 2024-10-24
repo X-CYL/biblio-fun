@@ -1,0 +1,60 @@
+pour demarrer le serveur 
+npm start
+ca demarre en localhost sur le port 3000
+
+
+
+Les classes personalisées (fichier de config tailwind) à créer FAIT
+    =>couleur principale de fond de page FAIT
+    =>couleur principale fond modales FAIT
+    =>couleur fond de carte livres FAIT
+    =>couleur default des liens nav FAIT
+    =>couleur default des liens selectionné FAIT
+    =>couleur de tour d' inputs FAIT
+    =>couleur de fond d'input FAIT
+    =>couleur de fond de bouton annuler FAIT
+    =>couleur de fond de bouton modifier FAIT
+    =>couleur de fond de bouton supprimer FAIT
+les composants micro
+    =>Creer les boutons FAIT
+    =>Creer les inputs avec labels
+Les composants base
+Les composants layout
+    =>Le footer FAIT
+    =>Le header
+    =>Le background image FAIT
+    =>Le background color FAIT
+Les composants modales
+Les routes
+
+Les composants pages
+    =>Faire la page acceuil FAIT 
+    =>Faire la page inscription FAIT
+    =>Faire la page de connexion FAIT
+    =>Faire la page d'enregistrement FAIT
+    =>Faire la page 404 FAIT
+    =>Faire le header FAIT
+    =>Faire une page admin FAIT
+    =>Faire une page ou modale de contact FAIT
+    =>Faire uen page admin pour pouvoir gerer le CRUD sur
+        -le format des livres
+        -le genre des livres.
+        Le but est que les internautes n'aie pas à gerer ce genre de choses pour éviter les erreurs de formatage de textes.
+        Il sera toujour possible a l'internaute de faire une demande d'ajout de format ou de genre vis le formulaire de contact
+
+                                                        API
+Definir les ends points
+voir l'appli API dediée "biblio-fun-api"
+
+
+                                                    fix à faire
+
+repositionner le footer de la page enregistrement en mode responsive de l inspecteur
+    => voir si normal ou pas 
+Voir pour que les pages prennent le plein écran sans la scroolbar latérale
+
+                                                    remercier
+Say thanks to Placidplace
+By downloading, you agree to our License
+pour le gif animé de la page 404
+

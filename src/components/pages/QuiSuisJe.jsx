@@ -1,14 +1,14 @@
 import React from "react";
 import BackgroundImageComponent from "../layout/BackgroundImageComponent";
 import BiblioFunTitle from "../micro/BiblioFunTitle";
-import Header from "../layout/Header";
 import Footer from "../layout/Footer"
 import QuiSuisJeText from "../micro/QuiSuisJeText";
+import Navbar from "../layout/Navbar"
 
 export default function QuiSuisJe() {
   return (
     <>
-    <Header />
+    <Navbar />
     <BiblioFunTitle />
       <BackgroundImageComponent>
         <QuiSuisJeText />

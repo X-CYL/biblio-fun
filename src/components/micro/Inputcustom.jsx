@@ -1,7 +1,17 @@
 import React from "react";
 import classNames from "classnames";
 
-export default function InputCustom({ labelName, type, variant, focus }) {
+export default function InputCustom({
+  id,
+  labelName,
+  type,
+  variant,
+  placeholder,
+  option,
+  onChange,
+  value,
+  defaultValue,
+}) {
   let inputZone = null;
 
   switch (type) {
@@ -10,7 +20,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
         <>
           <label
             className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
-            htmlFor="date"
+            htmlFor={id}
           >
             {labelName}
           </label>
@@ -25,8 +35,39 @@ export default function InputCustom({ labelName, type, variant, focus }) {
             ])}
             type="date"
             name="date"
-            id="date"
+            id={id}
+            placeholder={placeholder}
           ></input>
+        </>
+      );
+      break;
+    case "option":
+      inputZone = (
+        <>
+          <label
+            className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
+            htmlFor={id}
+          >
+            {labelName}
+          </label>
+          <select
+            className={classNames([
+              "w-[80%] ml-7 md:ml-2 md:h-12 border-4 border-border-input-color rounded-md bg-bg-primary",
+              {
+                "md:w-[50%]": variant === "small",
+                "md:w-[90%]": variant === "medium",
+                "md:w-[120%] ml-20": variant === "large",
+              },
+            ])}
+            type="text"
+            name="text"
+            id={id}
+            value={value}
+            placeholder={placeholder}
+            onChange={onChange}
+          >
+            {option}
+          </select>
         </>
       );
       break;
@@ -36,10 +77,9 @@ export default function InputCustom({ labelName, type, variant, focus }) {
           <div>
             <label
               className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
-              htmlFor="text"
+              htmlFor={id}
             >
               {labelName}
-              
             </label>
           </div>
           <div>
@@ -54,7 +94,9 @@ export default function InputCustom({ labelName, type, variant, focus }) {
               ])}
               type="text"
               name="text"
-              id="text"
+              id={id}
+              placeholder={placeholder}
+              defaultValue={defaultValue}
             ></input>
           </div>
         </>
@@ -65,7 +107,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
         <>
           <label
             className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
-            htmlFor="email"
+            htmlFor={id}
           >
             {labelName}
           </label>
@@ -79,8 +121,9 @@ export default function InputCustom({ labelName, type, variant, focus }) {
               },
             ])}
             type="email"
-            name="email id="
-            email
+            name="email"
+            id={id}
+            placeholder={placeholder}
           ></input>
         </>
       );
@@ -90,7 +133,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
         <>
           <label
             className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
-            htmlFor="password"
+            htmlFor={id}
           >
             {labelName}
           </label>
@@ -105,7 +148,8 @@ export default function InputCustom({ labelName, type, variant, focus }) {
             ])}
             type="password"
             name="password"
-            id="password"
+            id={id}
+            placeholder={placeholder}
           ></input>
         </>
       );
@@ -116,7 +160,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
           <div className="flex flex-col">
             <label
               className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
-              htmlFor="checkbox"
+              htmlFor={id}
             >
               {labelName}
             </label>
@@ -124,7 +168,8 @@ export default function InputCustom({ labelName, type, variant, focus }) {
               className="w-[40px] h-8 md:w-[40px] ml-7 md:ml-2 md:h-10 border-4 border-border-input-color rounded-md bg-bg-primary"
               type="checkbox"
               name="checkbox"
-              id="checkbox"
+              id={id}
+              onChange={onChange}
             ></input>
           </div>
         </>
@@ -135,7 +180,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
         <>
           <label
             className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
-            htmlFor="textarea"
+            htmlFor={id}
           >
             {labelName}
           </label>
@@ -150,7 +195,8 @@ export default function InputCustom({ labelName, type, variant, focus }) {
             ])}
             type="textarea"
             name="textarea"
-            id="textarea"
+            id={id}
+            placeholder={placeholder}
           ></input>
         </>
       );
@@ -161,7 +207,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
           <div className="flex flex-col">
             <label
               className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
-              htmlFor="file"
+              htmlFor={id}
             >
               {labelName}
             </label>
@@ -176,7 +222,8 @@ export default function InputCustom({ labelName, type, variant, focus }) {
               ])}
               type="file"
               name="file"
-              id="file"
+              id={id}
+              placeholder={placeholder}
             ></input>
           </div>
         </>
@@ -188,7 +235,7 @@ export default function InputCustom({ labelName, type, variant, focus }) {
           <div className="flex flex-col">
             <label
               className="text-4xl ml-7 mt-4 md:ml-2 font-primary-font text-bg-primary"
-              htmlFor="file"
+              htmlFor={id}
             >
               {labelName}
             </label>
@@ -203,7 +250,8 @@ export default function InputCustom({ labelName, type, variant, focus }) {
               ])}
               type="number"
               name="number"
-              id="number"
+              id={id}
+              placeholder={placeholder}
             ></input>
           </div>
         </>
