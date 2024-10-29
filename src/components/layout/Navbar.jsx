@@ -12,7 +12,7 @@ export default function Navbar() {
             <ul className="flex gap-16">
               {listNavLeft.map((item) => {
                 return (
-                  <li key={item.id} className={item.classN}>
+                  <li key={item.id} className="text-nav-text-color font-primary-font text-2xl md:text-5xl hover:text-nav-text-color-selected">
                     <Link to={item.path}>{item.title}</Link>
                   </li>
                 );
@@ -23,7 +23,7 @@ export default function Navbar() {
             <ul className="flex gap-16">
               {listNavRight.map((item) => {
                 return (
-                  <li key={item.id} className={item.classN}>
+                  <li key={item.id} className="text-nav-text-color font-primary-font text-2xl md:text-5xl hover:text-nav-text-color-selected">
                     <Link to={item.path}>{item.title}</Link>
                   </li>
                 );
